@@ -1,0 +1,15 @@
+.row{
+    padding: 20px;
+    background-color: grey;
+}
+.contenedor{
+    width: auto;
+}
+.parte1, .parte2{
+    display: inline-block;
+    text-align: justify;
+}
+.img-proyecto{
+    box-shadow: 20px 20px 50px black;
+    box-sizing: ejeX ejeY difumasion color;
+}
