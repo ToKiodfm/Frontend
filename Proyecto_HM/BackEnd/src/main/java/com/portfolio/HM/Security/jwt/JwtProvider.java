@@ -25,6 +25,7 @@ public class JwtProvider {
 
     @Value("${jwt.secret}")
     private String secret;
+    @Value("${jwt.expiration}")
     private int expiration;
 
     public String generateToken(Authentication authentication) {
@@ -47,9 +48,9 @@ public class JwtProvider {
         } catch (ExpiredJwtException e) {
             logger.error("Token expirado");
         } catch (IllegalArgumentException e) {
-            logger.error("Token vacío");
+            logger.error("Token vacÃ­o");
         } catch (SignatureException e) {
-            logger.error("Firma no válida");
+            logger.error("Firma no vÃ¡lida");
         }
     return false;
     }

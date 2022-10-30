@@ -48,7 +48,7 @@ public class AuthController {
     JwtProvider jwtProvider;
     
 
-    @PostMapping("/nuevo")
+    @PostMapping("/auth/nuevo")
     public ResponseEntity<?> nuevo(@Valid @RequestBody NuevoUsuario nuevoUsuario, BindingResult bindingResult){
         if(bindingResult.hasErrors())
             return new ResponseEntity(new Mensaje("Error en campos o email inválido"),HttpStatus.BAD_REQUEST);
@@ -73,7 +73,7 @@ public class AuthController {
          }
     
     
-    @PostMapping("/login")
+    @PostMapping("/auth/login")
     public ResponseEntity<JwtDto> login(@Valid @RequestBody LoginUsuario loginUsuario, BindingResult bindingResult){
         if(bindingResult.hasErrors())
                return new ResponseEntity(new Mensaje("Campos inválidos"), HttpStatus.BAD_REQUEST);
