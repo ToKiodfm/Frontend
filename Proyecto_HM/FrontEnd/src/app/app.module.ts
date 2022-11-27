@@ -8,7 +8,7 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HardysoftskillsComponent } from './components/hardysoftskills/hardysoftskills.component';
+import { HysComponent } from './components/hardysoftskills/hardysoftskills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -21,6 +21,9 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { EditSkillComponent } from './components/hardysoftskills//edit-skill.component';
+import { NewSkillComponent } from './components/hardysoftskills/new-skill.component';
+import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,7 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HardysoftskillsComponent,
+    HysComponent,
     ProyectosComponent,
     FooterComponent,
     HomeComponent,
@@ -39,8 +42,12 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
     NewExperienciaComponent,
     EditExperienciaComponent,
     NeweducacionComponent,
-    EditeducacionComponent
+    EditeducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
+    EditAcercaDeComponent
   ],
+
   imports: [
     BrowserModule,
     NgCircleProgressModule.forRoot({}),

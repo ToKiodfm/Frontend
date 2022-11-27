@@ -1,131 +1,40 @@
 <div class="row">
+
   <h1>Hard & Soft Skills</h1>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-  <circle-progress 
-      [percent]="25" 
-      [radius]="50" 
-      [showSubtitle]="false"
-      [showUnits]="false"
-      imageSrc="'../../../assets/imagenes/html.png"
-      [showImage]="true"
-      [imageHeight]="50"
-      [imageWidth]="50"
-      [outerStrokeWidth]="10" 
-      [innerStrokeWidth]="4"
-      [outerStrokeColor]="'#22142b'" 
-      [innerStrokeColor]="'#9932CC'" 
-      [animation]="true" 
-      [animationDuration]="1500"
-      [showBackground]="true"
-      [backgroundColor]="'#808080'"
-      
-    ></circle-progress>
-</div>
+  <div class="col-lg-2">
+      <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Agregar Skill</button>
+  </div>
 
-<div class="text-center col-sm-4 col-md-4 col-lg-4">
-  <circle-progress 
-      [percent]="25" 
-      [radius]="50" 
-      [showSubtitle]="false"
+  <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+      <circle-progress 
+      [percent]="(skill.porcentaje)" 
+      [radius]="90" [imageSrc]="''" 
+      [title]="(skill.nombre)"
+      [titleColor]="'#212F3C'"
+      [showTitle]="true" 
+      [showImage]="false" 
+      [imageHeight]="70" 
+      [imageWidth]="70" 
       [showUnits]="false"
-      imageSrc="'../../../assets/imagenes/CSS.png"
-      [showImage]="true"
-      [imageHeight]="60"
-      [imageWidth]="50"
-      [outerStrokeWidth]="10" 
-      [innerStrokeWidth]="4"
-      [outerStrokeColor]="'#22142b'" 
-      [innerStrokeColor]="'#9932CC'" 
+      [showSubtitle]="false" 
+      [outerStrokeWidth]="16" 
+      [innerStrokeWidth]="2" 
+      [outerStrokeColor]="'#78C000'"
+      [innerStrokeColor]="'#C7E596'" 
       [animation]="true" 
-      [animationDuration]="1500"
-      [showBackground]="true"
-      [backgroundColor]="'#808080'"
-      
-    ></circle-progress>
-</div>
+      [animationDuration]="200"
+      ></circle-progress>
 
-<div class="text-center col-sm-4 col-md-4 col-lg-4">
-  <circle-progress 
-      [percent]="25" 
-      [radius]="50" 
-      [showSubtitle]="false"
-      [showUnits]="false"
-      imageSrc="'../../../assets/imagenes/js.png"
-      [showImage]="true"
-      [imageHeight]="50"
-      [imageWidth]="50"
-      [outerStrokeWidth]="10" 
-      [innerStrokeWidth]="4"
-      [outerStrokeColor]="'#22142b'" 
-      [innerStrokeColor]="'#9932CC'" 
-      [animation]="true" 
-      [animationDuration]="1500"
-      [showBackground]="true"
-      [backgroundColor]="'#808080'"
+      <div>
+          <td *ngIf="isLogged">
+              <button class="btn btn-warning" routerLink="/editskill/ {{skill.id}}">
+                  <i class="bi bi-wrench-adjustable-circle-fill"></i>EDITAR</button>
+          </td>
+          <td *ngIf="isLogged">
+              <button class="btn btn-warning" (click)="delete(skill.id)">
+                  <i class="bi bi-emoji-dizzy-fill"></i>BORRAR</button>
+          </td>
+      </div>
       
-    ></circle-progress>
-</div>
-
-<div class="text-center col-sm-4 col-md-4 col-lg-4">
-  <circle-progress 
-      [percent]="50" 
-      [radius]="50" 
-      [showSubtitle]="false"
-      [showUnits]="false"
-      imageSrc="'../../../assets/imagenes/git.png"
-      [showImage]="true"
-      [imageHeight]="50"
-      [imageWidth]="50"
-      [outerStrokeWidth]="10" 
-      [innerStrokeWidth]="4"
-      [outerStrokeColor]="'#22142b'" 
-      [innerStrokeColor]="'#9932CC'" 
-      [animation]="true" 
-      [animationDuration]="1500"
-      [showBackground]="true"
-      [backgroundColor]="'#808080'"
-      
-    ></circle-progress>
-</div>
-
-<div class="text-center col-sm-4 col-md-4 col-lg-4">
-  <circle-progress 
-      [percent]="80" 
-      [radius]="50" 
-      [showSubtitle]="true"
-     
-      [showUnits]="false"
-      [outerStrokeWidth]="10" 
-      [innerStrokeWidth]="4"
-      [outerStrokeColor]="'#22142b'" 
-      [innerStrokeColor]="'#9932CC'" 
-      [animation]="true" 
-      [animationDuration]="1500"
-      [showBackground]="true"
-      [backgroundColor]="'#808080'"
-      
-    ></circle-progress>
-</div>
-
-<div class="text-center col-sm-4 col-md-4 col-lg-4">
-  <circle-progress 
-      [percent]="85" 
-      [radius]="50" 
-      [showSubtitle]="false"
-      [showUnits]="false"
-      imageSrc="'../../../assets/imagenes/html.png"
-      [showImage]="true"
-      [imageHeight]="50"
-      [imageWidth]="50"
-      [outerStrokeWidth]="10" 
-      [innerStrokeWidth]="4"
-      [outerStrokeColor]="'#22142b'" 
-      [innerStrokeColor]="'#9932CC'" 
-      [animation]="true" 
-      [animationDuration]="1500"
-      [showBackground]="true"
-      [backgroundColor]="'#808080'"
-      
-    ></circle-progress>
-</div>
+  </div>
 </div>
