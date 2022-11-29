@@ -6,4 +6,7 @@ div{
 }
 h1,h3{
     display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

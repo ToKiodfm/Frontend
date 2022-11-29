@@ -1,9 +1,15 @@
-.row{
+.row {
     padding: 30px;
 }
-div{
-    background: grey;
+
+div {
+    background: yellow;
 }
-h1,h3{
+
+h1,
+h3 {
     display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
