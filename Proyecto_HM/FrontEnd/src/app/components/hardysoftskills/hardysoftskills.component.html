@@ -8,9 +8,10 @@
   <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
       <circle-progress 
       [percent]="(skill.porcentaje)" 
-      [radius]="70" [imageSrc]="''" 
+      [radius]="90" [imageSrc]="''" 
       [title]="(skill.nombre)"
-      [titleColor]="'#212F3C'"
+      [titleColor]="'#000000'"
+      titleFontWeight="bold"
       [showTitle]="true" 
       [showImage]="false" 
       [imageHeight]="70" 
@@ -18,21 +19,21 @@
       [showUnits]="false"
       [showSubtitle]="false" 
       [outerStrokeWidth]="16" 
-      [innerStrokeWidth]="2" 
-      [outerStrokeColor]="'#000000'"
-      [innerStrokeColor]="'#C7E596'" 
+      [innerStrokeWidth]="3" 
+      [outerStrokeColor]="'#C81D11'"
+      [innerStrokeColor]="'#FFFFFF'" 
       [animation]="true" 
-      [animationDuration]="200"
-      ></circle-progress>
+      [animationDuration]="900"
+      ></circle-progress>>
 
       <div>
           <td *ngIf="isLogged">
               <button class="btn btn-warning" routerLink="/editskill/ {{skill.id}}">
-                  <i class="bi bi-wrench-adjustable-circle-fill"></i>EDITAR</button>
+                  <i class="bi bi-wrench-adjustable-circle-fill"></i></button>
           </td>
           <td *ngIf="isLogged">
               <button class="btn btn-warning" (click)="delete(skill.id)">
-                  <i class="bi bi-emoji-dizzy-fill"></i>BORRAR</button>
+                  X</button>
           </td>
       </div>
       

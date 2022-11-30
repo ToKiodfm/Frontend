@@ -33,13 +33,12 @@ export class EditeducacionComponent implements OnInit {
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.educacionS.update(id, this.educacion).subscribe(
-    {next:
-      data => {
+          data => {
         this.router.navigate(['']);
-      }, error: err => {
+      }, err => {
         alert("Error al modificar la educación");
         this.router.navigate(['']);
       }
-    });
+    );
   }
 }
