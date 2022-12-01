@@ -14,7 +14,7 @@ import { EditproComponent } from './components/proyectos/editpro.component';
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
-  {path:'login',component: LoginComponent},
+  {path: 'login',component: LoginComponent},
   {path: 'nuevaexp', component: NewExperienciaComponent },
   {path: 'editexp/:id', component: EditExperienciaComponent },
   {path: 'nuevaedu', component: NeweducacionComponent},

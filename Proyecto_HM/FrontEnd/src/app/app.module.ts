@@ -29,6 +29,7 @@ import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { NewproyectosComponent } from './components/proyectos/newproyectos.component';
 import { EditproComponent } from './components/proyectos/editpro.component';
+import { BannerProComponent } from './components/banner-pro/banner-pro.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { EditproComponent } from './components/proyectos/editpro.component';
     NewSkillComponent,
     EditAcercaDeComponent,
     NewproyectosComponent,
-    EditproComponent
+    EditproComponent,
+    BannerProComponent
   ],
 
   imports: [

@@ -4,7 +4,7 @@
 div{
     background: grey;
 }
-h1,h2,h3{
+h1{
     display: inline;
     display: flex;
     justify-content: center;
@@ -16,6 +16,13 @@ h1{
     font-weight: bold;   
     font-size: 60px;
 }
+
+h2{
+    align-items: right;
+    justify-content: right;
+
+}
+
 p{
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
