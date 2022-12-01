@@ -10,7 +10,8 @@ import { environment } from 'src/environments/environment';
     providedIn: 'root'
 })
 export class AuthService {
-    authURL = 'http://localhost:8080/auth/';
+    //authURL = 'http://localhost:8080/auth/';//
+    authURL = 'https://backendap-d612d.firebaseapp.com';
    
     constructor(private httpClient: HttpClient) { }
 

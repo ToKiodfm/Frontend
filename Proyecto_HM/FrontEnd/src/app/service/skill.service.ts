@@ -8,27 +8,27 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = environment.URL + 'skill/';
+  skURL = 'https://backendap-d612d.firebaseapp.com/skill/';
   
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Skill[]>{
-    return this.httpClient.get<Skill[]>(this.URL + 'lista');
+    return this.httpClient.get<Skill[]>(this.skURL + 'lista');
   }
 
   public detail(id: number): Observable<Skill>{
-    return this.httpClient.get<Skill>(this.URL + `detail/${id}`);
+    return this.httpClient.get<Skill>(this.skURL + `detail/${id}`);
   }
 
   public save(skill: Skill): Observable<any>{
-    return this.httpClient.post<any>(this.URL + 'create', skill);
+    return this.httpClient.post<any>(this.skURL + 'create', skill);
   }
 
   public update(id: number, skill: Skill): Observable<any>{
-    return this.httpClient.put<any>(this.URL + `update/${id}`, skill);
+    return this.httpClient.put<any>(this.skURL + `update/${id}`, skill);
   }
 
   public delete(id: number): Observable<any>{
-    return this.httpClient.delete(this.URL + `delete/${id}`);
+    return this.httpClient.delete(this.skURL + `delete/${id}`);
   }
 }

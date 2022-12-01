@@ -7,27 +7,28 @@ import { Experiencia } from "../model/Experiencia";
     providedIn: 'root'
 })
 export class ServExperienciaService {
-    URL = 'http://localhost:8080/explab/';
+   // serURL = 'http://localhost:8080/explab/';
+   serURL= 'https://backendap-d612d.firebaseapp.com/experlab/';
         
     constructor(private httpClient: HttpClient) { }
 
     public lista(): Observable<Experiencia[]>{
-      return this.httpClient.get<Experiencia[]>(this.URL + 'lista');
+      return this.httpClient.get<Experiencia[]>(this.serURL + 'lista');
     }
   
     public detail(id: number): Observable<Experiencia>{
-      return this.httpClient.get<Experiencia>(this.URL + `detail/${id}`);
+      return this.httpClient.get<Experiencia>(this.serURL + `detail/${id}`);
     } 
   
     public save(experiencia: Experiencia): Observable<any>{
-      return this.httpClient.post<any>(this.URL + 'create', experiencia);
+      return this.httpClient.post<any>(this.serURL + 'create', experiencia);
     }
   
     public update(id: number, experiencia: Experiencia): Observable<any>{
-      return this.httpClient.put<any>(this.URL + `update/${id}`, experiencia);
+      return this.httpClient.put<any>(this.serURL + `update/${id}`, experiencia);
     }
   
     public delete(id: number): Observable<any>{
-      return this.httpClient.delete<any>(this.URL + `delete/${id}`);
+      return this.httpClient.delete<any>(this.serURL + `delete/${id}`);
     }
 }

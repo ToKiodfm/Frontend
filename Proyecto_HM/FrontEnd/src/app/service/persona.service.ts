@@ -8,25 +8,25 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = environment.URL + 'personas/';
+  pURL = 'https://backendap-d612d.firebaseapp.com/personas/';
 
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<persona[]>{
-    return this.httpClient.get<persona[]>(this.URL + 'lista');
+    return this.httpClient.get<persona[]>(this.pURL + 'lista');
   }
 
   public detail(id: number): Observable<persona>{
-    return this.httpClient.get<persona>(this.URL + `detail/${id}`);
+    return this.httpClient.get<persona>(this.pURL + `detail/${id}`);
   }
 /*
   public save(Persona: persona): Observable<any>{
-    return this.httpClient.post<any>(this.URL + 'create', Persona);
+    return this.httpClient.post<any>(this.pURL + 'create', Persona);
   }*/
 
 
   public update(id: number, Persona: persona): Observable<any>{
-    return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
+    return this.httpClient.put<any>(this.pURL + `update/${id}`, Persona);
   }
 
   /*
