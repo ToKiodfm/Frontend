@@ -1,5 +1,4 @@
 
-import { JsonPipe } from "@angular/common";
 import { Injectable, ɵflushModuleScopingQueueAsMuchAsPossible } from "@angular/core";
 
 const TOKEN_KEY = "AuthToken";

@@ -8,7 +8,7 @@ import { Experiencia } from "../model/Experiencia";
 })
 export class ServExperienciaService {
    // serURL = 'http://localhost:8080/explab/';
-   serURL= 'https://backendap-d612d.firebaseapp.com/experlab/';
+   serURL= 'https://backendap-d612d.firebaseapp.com/explab/';
         
     constructor(private httpClient: HttpClient) { }
 

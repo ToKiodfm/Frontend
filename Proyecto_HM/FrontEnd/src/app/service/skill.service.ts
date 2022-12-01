@@ -8,7 +8,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  skURL = 'https://backendap-d612d.firebaseapp.com/skill/';
+  skURL = 'https://backendap-d612d-default-rtdb.firebaseio.com/skill/';
   
   constructor(private httpClient: HttpClient) { }
 

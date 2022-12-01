@@ -1,14 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { persona } from '../model/persona.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonaService {
-  pURL = 'https://backendap-d612d.firebaseapp.com/personas/';
+  pURL = 'https://backendap-d612d-default-rtdb.firebaseio.com/personas/';
 
   constructor(private httpClient: HttpClient) { }
 

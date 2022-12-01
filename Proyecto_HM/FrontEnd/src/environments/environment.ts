@@ -13,7 +13,8 @@ export const environment = {
     messagingSenderId: '262900521269',
   },
   production: false,
-  URL: 'http://localhost:8080/'
+  //URL: 'http://localhost:8080/'
+  URL: 'https://backendap-d612d-default-rtdb.firebaseio.com/'
 };
 
 /*
