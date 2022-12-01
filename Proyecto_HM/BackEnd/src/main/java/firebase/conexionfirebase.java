@@ -27,5 +27,13 @@ FirebaseOptions options = new FirebaseOptions.Builder()
 
 FirebaseApp.initializeApp(options);
 bd = FirestoreClient.getFirestore();
+System.out.println("Se conectó con éxito");
+    }
 
-}}
+public static void main(String[] args){
+    try{
+    conectar();
+    } catch (IOException e){
+      }
+}
+}
