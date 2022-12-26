@@ -1,4 +1,7 @@
 {
+  "storage": {
+    "rules": "jpg, jpeg, png"
+  },
   "hosting": {
     "public": "dist/proyecto-hm",
     "ignore": [
