@@ -8,5 +8,6 @@ export const environment = {
     authDomain: 'proyectofinal-26481.firebaseapp.com',
     messagingSenderId: '262900521269',
   },
-  production: true
+  production: true,
+  URL: 'https://backendap-d612d-default-rtdb.firebaseio.com',
 };
