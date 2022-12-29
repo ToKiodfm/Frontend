@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '262900521269',
   },
   production: true,
-  URL: 'https://backendap-d612d-default-rtdb.firebaseio.com',
+  URL: 'backendd-production.up.railway.app',
 };

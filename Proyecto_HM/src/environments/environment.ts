@@ -14,7 +14,7 @@ export const environment = {
   },
   production: false,
   //URL: 'http://localhost:8080/'
-  URL: 'https://backendap-d612d-default-rtdb.firebaseio.com'
+  URL: 'backendd-production.up.railway.app'
 };
 
 /*
