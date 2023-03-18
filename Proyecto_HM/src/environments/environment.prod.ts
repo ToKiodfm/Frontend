@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '262900521269',
   },
   production: true,
-  URL: 'backendd-production.up.railway.app',
+  URL: 'https://bknd-ap.onrender.com',
 };

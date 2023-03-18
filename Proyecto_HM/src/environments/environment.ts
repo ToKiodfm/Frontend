@@ -14,7 +14,7 @@ export const environment = {
   },
   production: false,
   //URL: 'http://localhost:8080/'
-  URL: 'backendd-production.up.railway.app'
+  URL: 'https://bknd-ap.onrender.com'
 };
 
 /*
