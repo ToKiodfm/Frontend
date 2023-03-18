@@ -14,7 +14,7 @@ export const environment = {
   },
   production: false,
   //URL: 'http://localhost:8080/'
-  URL: 'https://bknd-ap.onrender.com'
+  URL: 'https://backendaphm.onrender.com'
 };
 
 /*
