@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  eduURL = 'https://backendap-d612d-default-rtdb.firebaseio.com/educacion/';
+  eduURL = 'https://backendaphm.onrender.com/educacion/';
   //eduURL = 'http://localhost:8080/educacion/';
 
   constructor(private httpClient : HttpClient) { }

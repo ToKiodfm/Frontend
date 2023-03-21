@@ -30,6 +30,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { NewproyectosComponent } from './components/proyectos/newproyectos.component';
 import { EditproComponent } from './components/proyectos/editpro.component';
 import { BannerProComponent } from './components/banner-pro/banner-pro.component';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { BannerProComponent } from './components/banner-pro/banner-pro.component
     EditAcercaDeComponent,
     NewproyectosComponent,
     EditproComponent,
-    BannerProComponent
+    BannerProComponent,
+
   ],
 
   imports: [
@@ -64,9 +66,9 @@ import { BannerProComponent } from './components/banner-pro/banner-pro.component
     AppRoutingModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideStorage(() => getStorage()),
-
+    provideStorage(() => getStorage())
   ],
+  
   providers: [
     InterceptorProvider
   ],

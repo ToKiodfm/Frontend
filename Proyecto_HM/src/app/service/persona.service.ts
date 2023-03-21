@@ -7,7 +7,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  pURL = 'https://backendap-d612d-default-rtdb.firebaseio.com/personas/';
+  pURL = 'https://backendaphm.onrender.com/personas/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -8,7 +8,7 @@ import { Proyectos } from '../model/proyectos';
 })
 export class ProyectosService {
   //proyectosURL= 'http://localhost/8080/proyectos/';
-  proyectosURL = 'https://backendap-d612d-default-rtdb.firebaseio.com/proyectos/';
+  proyectosURL = 'https://backendaphm.onrender.com/proyectos/';
 
   constructor(private httpClient : HttpClient) { }
 
