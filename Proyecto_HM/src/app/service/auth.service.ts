@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
     //authURL = 'http://localhost:8080/auth/';//
-    authURL = 'https://backendap-d612d-default-rtdb.firebaseio.com/auth/';
+    authURL = 'https://bwa681raexbhnzjkptzm-mysql.services.clever-cloud.com/auth/';
    
     constructor(private httpClient: HttpClient) { }
 
