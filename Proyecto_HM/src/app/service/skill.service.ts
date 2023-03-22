@@ -8,7 +8,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  skURL = 'https://bwa681raexbhnzjkptzm-mysql.services.clever-cloud.com/skill/';
+  skURL = 'https://backendaphm.onrender.com/skill/';
   
   constructor(private httpClient: HttpClient) { }
 
