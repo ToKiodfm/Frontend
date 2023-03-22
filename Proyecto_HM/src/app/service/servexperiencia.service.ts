@@ -8,7 +8,7 @@ import { Experiencia } from "../model/Experiencia";
 })
 export class ServExperienciaService {
    // serURL = 'http://localhost:8080/explab/';
-   serURL= 'https://backendaphm.onrender.com/proyectos/explab/';
+   serURL= 'https://backendaphm.onrender.com/explab/';
         
     constructor(private httpClient: HttpClient) { }
 
