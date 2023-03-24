@@ -21,11 +21,16 @@ export class EditproComponent implements OnInit {
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.proyectosS.detail(id).subscribe(
-      data => {this.proyectos = data;},
-      err => { alert("Error al modificar");
+      {
+        next: data =>{
+          this.proyectos=data;
+      },
+
+      error: err =>{
+        alert("Error al modificar experiencia");
       this.router.navigate(['']);
-      }
-    )
+                    }
+    });
   }
 
   onUpdate(): void{
